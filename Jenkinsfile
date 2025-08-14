@@ -11,8 +11,8 @@ pipeline {
         FRONTEND_DIR = 'crud_frontend/crud_frontend-main'
 
         TOMCAT_URL = 'http://184.72.122.226:9090/manager/text'
-        TOMCAT_USER = 'admin'
-        TOMCAT_PASS = 'admin'
+        TOMCAT_USER = 'Admin'
+        TOMCAT_PASS = 'Admin'
 
         BACKEND_WAR = 'springapp1.war'
         FRONTEND_WAR = 'frontapp1.war'
@@ -21,7 +21,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: 'https://github.com/srithars/fullstackapp.git', branch: 'master'
+                git url: 'https://github.com/Vaishnavi182130/cicd.git', branch: 'main'
             }
         }
 
